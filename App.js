@@ -15,7 +15,7 @@ import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
 import Contact from './src/pages/Contact';
 import Project from './src/pages/Project';
-//import Home from './src/pages/Home';
+import Home from './src/pages/Home';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -53,7 +53,9 @@ const TabNav = TabNavigator(
 export default class App extends Component {
   render() {
     return (
-      <TabNav/>
+      // <Contact/>
+      //<TabNav/>
+      <Home/>
       // <View style={styles.container}>
           
       //   {/* <Routes/> */}
