@@ -16,16 +16,10 @@ export default class Contact extends Component{
         }
     }
     handleChange=(event)=>{
-        alert('I am changing');
         this.setState({[event.target.name]:event.target.value});
-    }
-
-    handleChange2=(event)=>{
-        this.setState({[event.target.source]:event.target.value});
     }
     handleSubmit=(event)=>{
         event.preventDefault();
-        alert(this.state.source)
         const{name,mobileno1,mobileno2,email,source}=this.state;
         axios.post('https://myybackend.herokuapp.com/contacts/',{
             name: name,
@@ -45,88 +39,23 @@ export default class Contact extends Component{
     }
     render(){
         return(
-            
-            // <form onSubmit={this.handleSubmit}>
-            // <div className="container">
-            // <form  onSubmit={this.handleSubmit}>
-            // <ScrollView>
-            // <label>
-            // Name
-            // <input
-            // name="name"
-            // type="text"
-            // value={this.state.name}
-            // onChange={this.handleChange}
-            // className="form-control"
-            // />
-            // </label>
-            // <br />
-            // <label>
-            // Mobile No 1
-            // <input
-            // name="mobileno1"
-            // type="text"
-            // value={this.state.mobileno1}
-            // onChange={this.handleChange}
-            // className="form-control"
-            // />
-            // </label>
-            // <br />
-            // <label>
-            // Mobile No 2
-            // <input
-            // name="mobileno2"
-            // type="text"
-            // value={this.state.mobileno2}
-            // onChange={this.handleChange}
-            // className="form-control"
-            // />
-            // </label>
-            // <br />
-            // <label>
-            // Email
-            // <input
-            // name="email"
-            // type="text"
-            // value={this.state.email}
-            // onChange={this.handleChange}
-            // className="form-control"
-            // />
-            // </label>
-            // <br />
-            // <label>
-            // Source
-            // <input
-            // name="source"
-            // type="text"
-            // value={this.state.source}
-            // onChange={this.handleChange}
-            // className="form-control"
-            // />
-            // </label>
-            // <br />
-            // <input type="submit" value="submit" className="btn btn-primary"
-            // />
-            // </ScrollView>
-            // </form>
-
              <View style={styles.container}>
-                 <ScrollView>
+                <ScrollView>
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Name of Contact'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(name) => this.setState({name})}
                     value={this.state.name}
-                    onChange={this.handleChange}
                 />
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Mobile No'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(mobileno1) => this.setState({mobileno1})}
                     value={this.state.mobileno1}
-                    onChange={this.handleChange}
                 />
 
                 <TextInput
@@ -134,8 +63,8 @@ export default class Contact extends Component{
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Mobile No2'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(mobileno2) => this.setState({mobileno2})}
                     value={this.state.mobileno2}
-                    onChange={this.handleChange}
                 />
 
                 <TextInput
@@ -143,16 +72,16 @@ export default class Contact extends Component{
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Email'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(email) => this.setState({email})}
                     value={this.state.email}
-                    onChange={this.handleChange}
                 />
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Source'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(source) => this.setState({source})}
                     value={this.state.source}
-                    onChangeText={this.handleChange2}
                 />
 
                 <TextInput
@@ -233,9 +162,9 @@ export default class Contact extends Component{
                     onChange={this.handleChange}
                 />
                 {/* <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Project')}><Text style={styles.buttontext}>Create contact</Text></TouchableOpacity> */}
-                <TouchableOpacity style={styles.button} onPress={this.handleSubmit}><Text style={styles.buttontext}>Post contact</Text></TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={this.handleSubmit}><Text style={styles.buttontext}>Submit Contact</Text></TouchableOpacity>
                 </ScrollView>
-            </View> 
+            </View>
             
 
         )

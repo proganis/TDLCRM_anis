@@ -1,11 +1,41 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import axios from 'axios';
 //import {Actions} from 'react-native-router-flux';
 
 export default class SignUp extends Component{
-    goback(){
-        Actions.pop();
+    constructor(props){
+        super(props);
+        this.state = {          
+            email: '',
+            password: '',
+            name: '',
+            picture: '',
+            role:''
+        }
     }
+
+    handleSubmit=(event)=>{
+        event.preventDefault();
+        const{email,password,name,picture,role}=this.state;
+        axios.post('https://myybackend.herokuapp.com/users/',{
+            access_token: "etc34LAYdtdp26QbXT9YAkMwYZOQ78JG",
+            email: email,
+            password:password,
+            name: name,
+            picture: picture,
+            role: role
+        })
+        .then((Response)=>{
+            console.log(response);
+            this.props.history.push('/');
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+
+    }
+
     render(){
         return(
             <View style={styles.container}>
@@ -14,12 +44,16 @@ export default class SignUp extends Component{
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='User Name'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(name) => this.setState({name})}
+                    value={this.state.name}
                 />
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Email'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(email) => this.setState({email})}
+                    value={this.state.email}
                 />
 
                 <TextInput
@@ -27,6 +61,8 @@ export default class SignUp extends Component{
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Department'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(role) => this.setState({role})}
+                    value={this.state.role}
                 />
 
                 <TextInput
@@ -35,8 +71,10 @@ export default class SignUp extends Component{
                     placeholder='Password'
                     secureTextEntry={true}
                     placeholderTextColor='#ffffff'
+                    onChangeText={(password) => this.setState({password})}
+                    value={this.state.password}
                 />
-                <TouchableOpacity onPress={this.goback} style={styles.button}><Text style={styles.buttontext}>Sign Up</Text></TouchableOpacity>
+                <TouchableOpacity onPress={this.handleSubmit} style={styles.button}><Text style={styles.buttontext}>Sign Up</Text></TouchableOpacity>
 
                 {/* <View style={styles.signuptext}>
                 <Text>If you already have an account,please SignIn</Text>

@@ -28,7 +28,7 @@ const instructions = Platform.select({
 
 const TabNav = TabNavigator(
   {
-    //Home: {screen:Home},
+    Home: {screen:Home},
     signup: { screen: SignUp },
     login: { screen: Login },
     Contact: { screen: Contact },
@@ -54,8 +54,8 @@ export default class App extends Component {
   render() {
     return (
       // <Contact/>
-      //<TabNav/>
-      <Home/>
+      <TabNav/>
+      //<Home/>
       // <View style={styles.container}>
           
       //   {/* <Routes/> */}
