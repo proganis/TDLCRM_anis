@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity,Picker} from 'react-native';
 import axios from 'axios';
 //import {Actions} from 'react-native-router-flux';
 
@@ -14,18 +14,27 @@ export default class SignUp extends Component{
             role:''
         }
     }
-
+    //{ headers: {"Authorization" : `Bearer ${tokenStr}`} }
+    // access_token: "etc34LAYdtdp26QbXT9YAkMwYZOQ78JG",
     handleSubmit=(event)=>{
         event.preventDefault();
+        const tokenStr='etc34LAYdtdp26QbXT9YAkMwYZOQ78JG';
         const{email,password,name,picture,role}=this.state;
-        axios.post('https://myybackend.herokuapp.com/users/',{
-            access_token: "etc34LAYdtdp26QbXT9YAkMwYZOQ78JG",
+        //axios.post()
+        alert(role);
+        axios.post('https://myybackend.herokuapp.com/users/',
+        {
             email: email,
             password:password,
             name: name,
             picture: picture,
             role: role
-        })
+        },
+        //"bearer " + token
+        //{ headers: {'Content-Type': 'application/json','Authorization' : 'etc34LAYdtdp26QbXT9YAkMwYZOQ78JG'} }
+        { headers: {'Content-Type': 'application/json','Authorization' : `Bearer  ${tokenStr}`} }
+        //{ headers: {'Content-Type': 'application/json','Authorization' : "Bearer  "+ tokenStr} }
+        )
         .then((Response)=>{
             console.log(response);
             this.props.history.push('/');
@@ -56,14 +65,26 @@ export default class SignUp extends Component{
                     value={this.state.email}
                 />
 
-                <TextInput
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Department'
                     placeholderTextColor='#ffffff'
                     onChangeText={(role) => this.setState({role})}
                     value={this.state.role}
-                />
+                /> */}
+
+                <Picker
+                selectedValue={this.state.role}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({role: itemValue})
+                }>
+                <Picker.Item label="Please Select a Department" value="Select a Department" />
+                <Picker.Item label="admin" value="admin" />
+                <Picker.Item label="mkt" value="mkt" />
+                <Picker.Item label="sales" value="user" />
+                </Picker>
 
                 <TextInput
                     style={styles.inputBox}
@@ -74,6 +95,7 @@ export default class SignUp extends Component{
                     onChangeText={(password) => this.setState({password})}
                     value={this.state.password}
                 />
+
                 <TouchableOpacity onPress={this.handleSubmit} style={styles.button}><Text style={styles.buttontext}>Sign Up</Text></TouchableOpacity>
 
                 {/* <View style={styles.signuptext}>

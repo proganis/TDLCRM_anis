@@ -1,14 +1,36 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import axios from 'axios';
 //import { navigation } from 'react-navigation';
 //import Contact from './src/pages/Contact';
 
 export default class Logo extends Component{
-    
-    loginSuccess()
-    {
-        alert("Successfully login");
-        //this.props.navigation.navigate('Contact');
+    constructor(props) { 
+        super(props);
+        this.state = {          
+            email: '',
+            password:''
+        }
+    }
+    // loginSuccess()
+    // {
+    //     alert("Successfully login");
+    // }
+    loginSuccess=(event)=>{
+        event.preventDefault();
+        const{email,password}=this.state;
+        axios.post('https://myybackend.herokuapp.com/auth/',{
+            email: email,
+            password:password
+        })
+        .then((Response)=>{
+            console.log(response);
+            this.props.history.push('/');
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+        this.props.navigation.navigate('Home')
     }
     render(){
 
@@ -18,8 +40,10 @@ export default class Logo extends Component{
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
-                    placeholder='User Name'
+                    placeholder='Email'
                     placeholderTextColor='#ffffff'
+                    onChangeText={(email) => this.setState({email})}
+                    value={this.state.email}
                 />
                 {/* <TextInput
                     style={styles.inputBox}
@@ -43,6 +67,8 @@ export default class Logo extends Component{
                     placeholder='Password'
                     secureTextEntry={true}
                     placeholderTextColor='#ffffff'
+                    onChangeText={(password) => this.setState({password})}
+                    value={this.state.password}
                 />
                 <TouchableOpacity onPress={this.loginSuccess}style={styles.button}><Text style={styles.buttontext}>Login</Text></TouchableOpacity>
             </View>

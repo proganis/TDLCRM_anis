@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, ScrollView,Text, View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import {StyleSheet, ScrollView,Text, Picker,View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
 //import { Table, Button } from 'react-bootstrap';
 import axios from 'axios';
 //import {Actions} from 'react-native-router-flux';
@@ -12,7 +12,18 @@ export default class Contact extends Component{
             mobileno1: '',
             mobileno2: '',
             email: '',
-            source:''
+            source:'',
+            contactStatus:'',
+            location:'',
+            flatsize:'',
+            budget:'',
+            readyOngoing:'',
+            handoverdate:'',
+            forwhome:'',
+            purpose:'',
+            financeBy:'',
+            issueby:''
+
         }
     }
     handleChange=(event)=>{
@@ -20,13 +31,24 @@ export default class Contact extends Component{
     }
     handleSubmit=(event)=>{
         event.preventDefault();
-        const{name,mobileno1,mobileno2,email,source}=this.state;
+        const{name,mobileno1,mobileno2,email,source,contactStatus,location,flatsize,budget,readyOngoing,handoverdate,forwhome,purpose,financeBy,issueby}=this.state;
         axios.post('https://myybackend.herokuapp.com/contacts/',{
             name: name,
             mobileno1: mobileno1,
             mobileno2: mobileno2,
             email: email,
-            source:source
+            source:source,
+            contactStatus:contactStatus,
+            location:location,
+            flatsize:flatsize,
+            budget:budget,
+            readyOngoing:readyOngoing,
+            handoverdate:handoverdate,
+            forwhome:forwhome,
+            purpose:purpose,
+            financeBy:financeBy,
+            issueby:issueby
+
         })
         .then((Response)=>{
             console.log(response);
@@ -75,39 +97,64 @@ export default class Contact extends Component{
                     onChangeText={(email) => this.setState({email})}
                     value={this.state.email}
                 />
-                <TextInput
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Source'
                     placeholderTextColor='#ffffff'
                     onChangeText={(source) => this.setState({source})}
                     value={this.state.source}
-                />
+                /> */}
 
-                <TextInput
+                <Picker
+                selectedValue={this.state.source}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({source: itemValue})
+                }>
+                <Picker.Item label="Source of Client" value="Source of Client" />
+                <Picker.Item label="LandOwner reference" value="LandOwner reference" />
+                <Picker.Item label="Print Media" value="Print Media" />
+                <Picker.Item label="Electronic Media" value="Electronic Media" />
+                <Picker.Item label="Project Fair" value="Project Fair" />
+                </Picker>
+
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Contact Status'
                     placeholderTextColor='#ffffff'
                     value={this.state.name}
                     onChange={this.handleChange}
-                />
+                /> */}
+
+                <Picker
+                selectedValue={this.state.contactStatus}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({contactStatus: itemValue})
+                }>
+                <Picker.Item label="Contact Status" value="ContactStatus" />
+                <Picker.Item label="New Prospect" value="New Prospect" />
+                <Picker.Item label="Old Prospect" value="Old Prospect" />
+                </Picker>
+
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Area/Location'
                     placeholderTextColor='#ffffff'
-                    value={this.state.mobileno1}
-                    onChange={this.handleChange}
+                    onChangeText={(location) => this.setState({location})}
+                    value={this.state.location}
                 />
-
+                
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Flat Size'
                     placeholderTextColor='#ffffff'
-                    value={this.state.mobileno2}
-                    onChange={this.handleChange}
+                    onChangeText={(flatsize) => this.setState({flatsize})}
+                    value={this.state.flatsize}
                 />
 
                 <TextInput
@@ -115,52 +162,95 @@ export default class Contact extends Component{
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Budget'
                     placeholderTextColor='#ffffff'
-                    value={this.state.email}
-                    onChange={this.handleChange}
+                    onChangeText={(budget) => this.setState({budget})}
+                    value={this.state.budget}
                 />
-                <TextInput
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Ready/Ongoing'
                     placeholderTextColor='#ffffff'
                     value={this.state.source}
                     onChangeText={this.handleChange2}
-                />
+                /> */}
+
+                <Picker
+                selectedValue={this.state.readyOngoing}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({readyOngoing: itemValue})
+                }>
+                <Picker.Item label="Ready/Ongoing" value="Ready/Ongoing" />
+                <Picker.Item label="Ready" value="Ready" />
+                <Picker.Item label="Ongoing" value="Ongoing" />
+                </Picker>
 
 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Handover On Date'
                     placeholderTextColor='#ffffff'
-                    value={this.state.name}
-                    onChange={this.handleChange}
+                    onChangeText={(handoverdate) => this.setState({handoverdate})}
+                    value={this.state.handoverdate}
                 />
-                <TextInput
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='For Whom'
                     placeholderTextColor='#ffffff'
                     value={this.state.mobileno1}
                     onChange={this.handleChange}
-                />
+                /> */}
 
-                <TextInput
+                <Picker
+                selectedValue={this.state.forwhome}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({forwhome: itemValue})
+                }>
+                <Picker.Item label="For Whome" value="forwhome" />
+                <Picker.Item label="Own" value="Own" />
+                <Picker.Item label="Others" value="Other" />
+                </Picker>
+
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Purpose'
                     placeholderTextColor='#ffffff'
                     value={this.state.mobileno2}
                     onChange={this.handleChange}
-                />
+                /> */}
 
-                <TextInput
+                <Picker
+                selectedValue={this.state.purpose}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({purpose: itemValue})
+                }>
+                <Picker.Item label="Purpose" value="Purpose" />
+                <Picker.Item label="Own Use" value="Own" />
+                <Picker.Item label="Rent" value="Rent" />
+                </Picker>
+
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Finance By'
                     placeholderTextColor='#ffffff'
                     value={this.state.email}
                     onChange={this.handleChange}
-                />
+                /> */}
+                <Picker
+                selectedValue={this.state.financeBy}
+                style={{height: 50, width: 280,borderRadius:5,paddingHorizontal:16,fontSize:16,color:'#ffffff',marginVertical:10}}
+                onValueChange={(itemValue, itemIndex) =>
+                    this.setState({financeBy: itemValue})
+                }>
+                <Picker.Item label="Finance By" value="FinanceBy" />
+                <Picker.Item label="Own" value="Own" />
+                <Picker.Item label="Own & Bank" value="Own & Bank" />
+                </Picker>
                 {/* <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Project')}><Text style={styles.buttontext}>Create contact</Text></TouchableOpacity> */}
                 <TouchableOpacity style={styles.button} onPress={this.handleSubmit}><Text style={styles.buttontext}>Submit Contact</Text></TouchableOpacity>
                 </ScrollView>
