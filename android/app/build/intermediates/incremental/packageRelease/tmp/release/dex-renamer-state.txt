@@ -1,0 +1,4 @@
+#Sun Sep 01 15:47:47 BDT 2019
+base.0=G\:\\TDLCRMProduction\\android\\app\\build\\intermediates\\transforms\\r8\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

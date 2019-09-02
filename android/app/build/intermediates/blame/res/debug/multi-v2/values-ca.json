@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\TDLCRM\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "G:\\TDLCRMProduction\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
                     "source": "C:\\Users\\NTI\\.gradle\\caches\\transforms-2\\files-2.1\\ea9635c649ead448b7d89410fa3b4458\\res\\values-ca\\values-ca.xml",

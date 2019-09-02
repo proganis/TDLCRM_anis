@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity,Picker} from 'react-native';
+import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity,Picker,ScrollView} from 'react-native';
 import axios from 'axios';
 //import {Actions} from 'react-native-router-flux';
 
@@ -19,9 +19,10 @@ export default class SignUp extends Component{
     handleSubmit=(event)=>{
         event.preventDefault();
         const tokenStr='etc34LAYdtdp26QbXT9YAkMwYZOQ78JG';
+        //const tokenStr='etc34LAYdtdp26Qb543534534534534535';
         const{email,password,name,picture,role}=this.state;
         //axios.post()
-        alert(role);
+        //alert(role);
         axios.post('https://myybackend.herokuapp.com/users/',
         {
             email: email,
@@ -36,18 +37,27 @@ export default class SignUp extends Component{
         //{ headers: {'Content-Type': 'application/json','Authorization' : "Bearer  "+ tokenStr} }
         )
         .then((Response)=>{
-            console.log(response);
+            alert("User are saved successfully");
             this.props.history.push('/');
         })
         .catch((error)=>{
             console.log(error);
         });
 
+        this.setState({
+			email: '',
+            password: '',
+            name: '',
+            picture: '',
+            role:''
+		});
+
     }
 
     render(){
         return(
             <View style={styles.container}>
+                <ScrollView>
                 <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
@@ -97,6 +107,7 @@ export default class SignUp extends Component{
                 />
 
                 <TouchableOpacity onPress={this.handleSubmit} style={styles.button}><Text style={styles.buttontext}>Sign Up</Text></TouchableOpacity>
+                </ScrollView>
 
                 {/* <View style={styles.signuptext}>
                 <Text>If you already have an account,please SignIn</Text>

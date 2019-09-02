@@ -108,7 +108,9 @@ import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
 import Contact from './src/pages/Contact';
 import Project from './src/pages/Project';
+import Offer from './src/pages/OfferInfo';
 import Home from './src/pages/Home';
+import OfferList from './src/pages/OfferHome1'
 
 class HomeScreen extends React.Component {
   render() {
@@ -144,7 +146,8 @@ const TabNavigator = createBottomTabNavigator({
   Contact:Contact,
   Home: Home,
   //Settings: SettingsScreen,
-  Project:Project
+  Offer:Offer,
+  OfferList:OfferList
 });
 
 

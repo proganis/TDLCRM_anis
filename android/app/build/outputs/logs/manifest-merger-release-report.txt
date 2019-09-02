@@ -1,0 +1,205 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] G:\TDLCRMProduction\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-date-picker] G:\TDLCRMProduction\node_modules\react-native-date-picker\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eb2a4c54f172dc66f7b32015c7a0d562\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\2765736d476d5f62600ae6721f33ae4c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.henninghall.android:NumberPickerView:1.1.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0fcdd6a6a30b1fe0bba2579395181524\AndroidManifest.xml:2:1-11:12
+MERGED from [net.time4j:time4j-android:4.2-2018i] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\4db5e04af28e45aef4174d377d2022e7\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\34b66cb0350af1b01e3ff4e804b88331\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\adb2dd8b6424c52654b048328a830576\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\46ba02d50fbba73536a29035e747ae66\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\87dba621fee88dbe7abe3ed057c986ec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\62a5269cf9c5f2532a1aab2eabbe6123\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\92af515d4889910f735ef946258a1e18\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e4d302baebbbdafb6c69fbe28d69d5e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\72741e7a488db8db3c612dac12ca5b37\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\3e92968bbcbc7cfd36fdac8f8af1c6a9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\fe96cecaedaa52b1d2cab0647e2d813f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\6e5b1a38cab4c01bfe923c33984f7780\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\21f13d247a542756e8ab4d4d7f7d7f5c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b054d373347624b9bfb622fdf2bda467\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\aa039130d66720f71bead401a3a0b820\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1070de132776c5839ba97ea944e298f7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\c2066d22a1965420bdcee285a0600e87\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\416e1ee5a7557ac41659793b110a5b1f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\7ed664bc55f3693cd2629650d84017f5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e9db0566a539fa9595fe4598c8f2bf00\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\faf2d4739bf8371488b8c62db52f6fa2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\759cc4f1c42013a952f81d4e0cb6e1ef\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\40df1ad0ddffd412248b4b75115bb8ee\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\8196db050820f74c19e1885fa29792e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b4f2f843c1df48e275f2eca73be8c28a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\32154495db24d1fafb217e372a1c3a9c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0bc2545f82835087c1d60266249d7d01\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ddbe2c43ddaf7a31099a207a9f0b32a3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\a90cb88684221d7e6892a888b20f78a9\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\074d0a531d5a45480ed4603f9e2b4bb0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eec591b610a2e3f78ad353858a47369c\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1fec08cc0fa943c65758ed719ebeb30e\AndroidManifest.xml:2:1-9:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:2:3-23
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eb2a4c54f172dc66f7b32015c7a0d562\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eb2a4c54f172dc66f7b32015c7a0d562\AndroidManifest.xml:11:5-20
+MERGED from [net.time4j:time4j-android:4.2-2018i] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\4db5e04af28e45aef4174d377d2022e7\AndroidManifest.xml:11:5-20
+MERGED from [net.time4j:time4j-android:4.2-2018i] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\4db5e04af28e45aef4174d377d2022e7\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\aa039130d66720f71bead401a3a0b820\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\aa039130d66720f71bead401a3a0b820\AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eec591b610a2e3f78ad353858a47369c\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eec591b610a2e3f78ad353858a47369c\AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:8:7-39
+	android:roundIcon
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:10:7-52
+	android:icon
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:7:7-38
+activity#com.tdlcrm.MainActivity
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] G:\TDLCRMProduction\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] G:\TDLCRMProduction\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-date-picker] G:\TDLCRMProduction\node_modules\react-native-date-picker\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-date-picker] G:\TDLCRMProduction\node_modules\react-native-date-picker\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eb2a4c54f172dc66f7b32015c7a0d562\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eb2a4c54f172dc66f7b32015c7a0d562\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\2765736d476d5f62600ae6721f33ae4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\2765736d476d5f62600ae6721f33ae4c\AndroidManifest.xml:20:5-44
+MERGED from [com.henninghall.android:NumberPickerView:1.1.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0fcdd6a6a30b1fe0bba2579395181524\AndroidManifest.xml:7:5-9:41
+MERGED from [com.henninghall.android:NumberPickerView:1.1.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0fcdd6a6a30b1fe0bba2579395181524\AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.2-2018i] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\4db5e04af28e45aef4174d377d2022e7\AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.2-2018i] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\4db5e04af28e45aef4174d377d2022e7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\34b66cb0350af1b01e3ff4e804b88331\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\34b66cb0350af1b01e3ff4e804b88331\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\adb2dd8b6424c52654b048328a830576\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\adb2dd8b6424c52654b048328a830576\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\46ba02d50fbba73536a29035e747ae66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\46ba02d50fbba73536a29035e747ae66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\87dba621fee88dbe7abe3ed057c986ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\87dba621fee88dbe7abe3ed057c986ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\62a5269cf9c5f2532a1aab2eabbe6123\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\62a5269cf9c5f2532a1aab2eabbe6123\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\92af515d4889910f735ef946258a1e18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\92af515d4889910f735ef946258a1e18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e4d302baebbbdafb6c69fbe28d69d5e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e4d302baebbbdafb6c69fbe28d69d5e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\72741e7a488db8db3c612dac12ca5b37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\72741e7a488db8db3c612dac12ca5b37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\3e92968bbcbc7cfd36fdac8f8af1c6a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\3e92968bbcbc7cfd36fdac8f8af1c6a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\fe96cecaedaa52b1d2cab0647e2d813f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\fe96cecaedaa52b1d2cab0647e2d813f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\6e5b1a38cab4c01bfe923c33984f7780\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\6e5b1a38cab4c01bfe923c33984f7780\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\21f13d247a542756e8ab4d4d7f7d7f5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\21f13d247a542756e8ab4d4d7f7d7f5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b054d373347624b9bfb622fdf2bda467\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b054d373347624b9bfb622fdf2bda467\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ea9635c649ead448b7d89410fa3b4458\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\aa039130d66720f71bead401a3a0b820\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\aa039130d66720f71bead401a3a0b820\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1070de132776c5839ba97ea944e298f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1070de132776c5839ba97ea944e298f7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\c2066d22a1965420bdcee285a0600e87\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\c2066d22a1965420bdcee285a0600e87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\416e1ee5a7557ac41659793b110a5b1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\416e1ee5a7557ac41659793b110a5b1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\7ed664bc55f3693cd2629650d84017f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\7ed664bc55f3693cd2629650d84017f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e9db0566a539fa9595fe4598c8f2bf00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\e9db0566a539fa9595fe4598c8f2bf00\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\faf2d4739bf8371488b8c62db52f6fa2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\faf2d4739bf8371488b8c62db52f6fa2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\759cc4f1c42013a952f81d4e0cb6e1ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\759cc4f1c42013a952f81d4e0cb6e1ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\40df1ad0ddffd412248b4b75115bb8ee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\40df1ad0ddffd412248b4b75115bb8ee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\8196db050820f74c19e1885fa29792e2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\8196db050820f74c19e1885fa29792e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b4f2f843c1df48e275f2eca73be8c28a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\b4f2f843c1df48e275f2eca73be8c28a\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\32154495db24d1fafb217e372a1c3a9c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\32154495db24d1fafb217e372a1c3a9c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0bc2545f82835087c1d60266249d7d01\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\0bc2545f82835087c1d60266249d7d01\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ddbe2c43ddaf7a31099a207a9f0b32a3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\ddbe2c43ddaf7a31099a207a9f0b32a3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\a90cb88684221d7e6892a888b20f78a9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\a90cb88684221d7e6892a888b20f78a9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\074d0a531d5a45480ed4603f9e2b4bb0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\074d0a531d5a45480ed4603f9e2b4bb0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eec591b610a2e3f78ad353858a47369c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\eec591b610a2e3f78ad353858a47369c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1fec08cc0fa943c65758ed719ebeb30e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\NTI\.gradle\caches\transforms-2\files-2.1\1fec08cc0fa943c65758ed719ebeb30e\AndroidManifest.xml:5:5-7:41
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		ADDED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml
+		INJECTED from G:\TDLCRMProduction\android\app\src\main\AndroidManifest.xml

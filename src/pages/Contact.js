@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
-import {StyleSheet, ScrollView,Text, Picker,View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import {Alert,StyleSheet, ScrollView,Text, Picker,View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+//import DatePicker from 'react-native-date-picker';
+import DatePicker from 'react-native-datepicker';
+import { TextField } from 'react-native-material-textfield';
 //import { Table, Button } from 'react-bootstrap';
 import axios from 'axios';
+import { Reducer } from 'react-native-router-flux';
 //import {Actions} from 'react-native-router-flux';
 
 export default class Contact extends Component{
@@ -18,7 +22,8 @@ export default class Contact extends Component{
             flatsize:'',
             budget:'',
             readyOngoing:'',
-            handoverdate:'',
+            //handoverdate:'',
+            handoverdate:new Date(),
             forwhome:'',
             purpose:'',
             financeBy:'',
@@ -51,12 +56,32 @@ export default class Contact extends Component{
 
         })
         .then((Response)=>{
-            console.log(response);
-            this.props.history.push('/');
+            //console.log(response);
+            //this.props.history.push('/');
+            alert("Contacts are saved successfully");
         })
         .catch((error)=>{
             console.log(error);
         });
+        //for reset
+        this.setState({
+			name: '',
+            mobileno1: '',
+            mobileno2: '',
+            email: '',
+            source:'',
+            contactStatus:'',
+            location:'',
+            flatsize:'',
+            budget:'',
+            readyOngoing:'',
+            //handoverdate:'',
+            handoverdate:new Date(),
+            forwhome:'',
+            purpose:'',
+            financeBy:'',
+            issueby:''
+		});
 
     }
     render(){
@@ -75,6 +100,7 @@ export default class Contact extends Component{
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Mobile No'
+                    keyboardType={'numeric'}
                     placeholderTextColor='#ffffff'
                     onChangeText={(mobileno1) => this.setState({mobileno1})}
                     value={this.state.mobileno1}
@@ -84,6 +110,7 @@ export default class Contact extends Component{
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Mobile No2'
+                    keyboardType={'numeric'}
                     placeholderTextColor='#ffffff'
                     onChangeText={(mobileno2) => this.setState({mobileno2})}
                     value={this.state.mobileno2}
@@ -185,14 +212,48 @@ export default class Contact extends Component{
                 <Picker.Item label="Ongoing" value="Ongoing" />
                 </Picker>
 
-<TextInput
+                {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
                     placeholder='Handover On Date'
                     placeholderTextColor='#ffffff'
                     onChangeText={(handoverdate) => this.setState({handoverdate})}
                     value={this.state.handoverdate}
-                />
+                /> */}
+            {/* <TextField
+                    label='HandOver Time'
+                    textColor='#ffffff'
+            /> */}
+            <DatePicker
+                    style={{width: 300}}
+                    showIcon={true}
+                    date={this.state.handoverdate} //initial date from state
+                    mode="date" //The enum of date, datetime and time
+                    placeholder="select date"
+                    format="DD-MM-YYYY"
+                    minDate="01-01-2016"
+                    maxDate="01-01-2029"
+                    confirmBtnText="Confirm"
+                    cancelBtnText="Cancel"
+                    customStyles={{
+                        dateIcon: {
+                        width:30,
+                        height:30,
+                        position: 'absolute',
+                        left: 0,
+                        top: 4,
+                        borderRadius:2,
+                        borderColor:'#ffffff',
+                        marginLeft: 0
+                        //border:'1px solid red'
+                        },
+                        dateInput: {
+                        marginLeft: 36
+                        }
+                    }}
+                    onDateChange={(date) => {this.setState({handoverdate: date})}}
+                    />
+
                 {/* <TextInput
                     style={styles.inputBox}
                     underlineColorAndroid='rgba(0,0,0,0)'
@@ -259,6 +320,28 @@ export default class Contact extends Component{
 
         )
     }
+
+    componentWillUnmount() {
+        alert("Component are unmounted");
+        //this.setState({name:''})
+        // this.state = {          
+        //     name: '',
+        //     mobileno1: '',
+        //     mobileno2: '',
+        //     email: '',
+        //     source:'',
+        //     contactStatus:'',
+        //     location:'',
+        //     flatsize:'',
+        //     budget:'',
+        //     readyOngoing:'',
+        //     handoverdate:'',
+        //     forwhome:'',
+        //     purpose:'',
+        //     financeBy:'',
+        //     issueby:''
+        // }
+      }
 }
 
 const styles = StyleSheet.create({

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View,StatusBr,TextInput,TouchableOpacity,Linking,btoa} from 'react-native';
 import axios from 'axios';
-//import { navigation } from 'react-navigation';
-//import Contact from './src/pages/Contact';
+import { navigation } from 'react-navigation';
+import Contact from '../pages/Contact'
 
 export default class Logo extends Component{
     constructor(props) { 
@@ -16,21 +16,69 @@ export default class Logo extends Component{
     // {
     //     alert("Successfully login");
     // }
+    loginSuccess2=(event)=>{
+        event.preventDefault();
+        const{email,password}=this.state;
+
+        var session_url = 'https://myybackend.herokuapp.com/auth/';
+        var basicAuth = 'Basic ' + btoa(email + ':' + password);
+        axios.post(session_url, {}, {
+        headers: { 'Authorization': + basicAuth }
+        }).then(function(response) {
+        console.log('Authenticated');
+        }).catch(function(error) {
+        console.log('Error on Authentication');
+        });
+    }
+
+    loginSuccess3=(event)=>{
+        var session_url = 'https://myybackend.herokuapp.com/auth/';
+        const tokenStr='etc34LAYdtdp26QbXT9YAkMwYZOQ78JG';
+        const{email,password}=this.state;
+        //self.props.appContext=new self.props.appContext();
+        axios.post(session_url, {}, {
+        auth: {
+            email: email,
+            password: password
+        }
+        }).then(function(response) {
+        alert(response.data.code);
+        }).catch(function(error) {
+            //uploadScreen.push(<Contact appContext={self.props.appContext}/>)
+            //self.props.appContext.setState()
+            alert(email+password)
+        alert('Error on Authentication');
+        });
+    }
+
     loginSuccess=(event)=>{
         event.preventDefault();
         const{email,password}=this.state;
-        axios.post('https://myybackend.herokuapp.com/auth/',{
+        const tokenStr='etc34LAYdtdp26QbXT9YAkMwYZOQ78JG';
+        axios.post('https://myybackend.herokuapp.com/auth/',
+        {
             email: email,
             password:password
-        })
+        },
+        { headers: {'Content-Type': 'application/json','Authorization' : 'Basic'} }
+        )
         .then((Response)=>{
-            console.log(response);
-            this.props.history.push('/');
+            alert("successfully login");
+            //setLocalStorage('token', Response.data.token);
+            //alert(Response.data.token);
+            //console.log(response);
+            //this.props.history.push('/');
+            //<Contact/>
         })
         .catch((error)=>{
-            console.log(error);
+            //this.props.navigation.navigate('Contact')
+            alert("successfully loginn");
+            alert(Response.data.token);
+            //this.props.history.push('/');
+            //alert(error);
+            //console.log(error);
         });
-        this.props.navigation.navigate('Home')
+        //this.props.navigation.navigate('Contact')
     }
     render(){
 

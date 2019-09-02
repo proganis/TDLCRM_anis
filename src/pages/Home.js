@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {ScrollView,ListView,StyleSheet, Text, View,StatusBr,TouchableOpacity,Platform,Alert} from 'react-native';
+import Communications from 'react-native-communications';
 import { Table, Row, Rows } from 'react-native-table-component';
 import axios from 'axios';
 import TableRow from '../components/TableRow';
@@ -33,12 +34,25 @@ export default class Home extends Component {
  
       Alert.alert(item);
     }
+    handleSubmitPhone=(item)=>{
+      Communications.phonecall(item, true);
+      //Communications.text(item, 'Test Text Here')
+      //Communications.email([item],null,null,'Please write your Subject','Write down the message');
+    }
+    handleSubmitSMS=(item)=>{
+      //Communications.phonecall(item, true);
+      Communications.text(item, '')
+      //Communications.email([item],null,null,'Please write your Subject','Write down the message');
+    }
 
-    handleSubmit=(item)=>{
-      Alert.alert(item);
+    handleSubmitEmail=(item)=>{
+      //Communications.phonecall(item, true);
+      //Communications.text(item, 'Test Text Here')
+      Communications.email([item],null,null,'Please write your Subject','Write down the message');
     }
   render() {
     return (
+      
       <View style={styles.MainContainer}>
       <Text>Contact List</Text>
       <ScrollView>
@@ -46,11 +60,23 @@ export default class Home extends Component {
           this.state.contactsdata.map((item, key) => (
             <TouchableOpacity key={key} onPress={this.showArrayItem.bind(this, item.name)}>
               <Text style={styles.TextStyle}> {item.name} {"   "}{item.mobileno1}{"  "}{item.email}</Text>
-              <TouchableOpacity style={styles.button} onPress={this.handleSubmit.bind(this,item.id)}><Text style={styles.buttontext}>SMS</Text></TouchableOpacity>
-              {/* <TouchableOpacity style={styles.button} onPress={this.handleSubmit.bind(this,item.id)}><Text style={styles.buttontext}>Phone</Text></TouchableOpacity>
-              <TouchableOpacity style={styles.button} onPress={this.handleSubmit.bind(this,item.id)}><Text style={styles.buttontext}>SMS</Text></TouchableOpacity>
-              <TouchableOpacity style={styles.button} onPress={this.handleSubmit.bind(this,item.id)}><Text style={styles.buttontext}>Email</Text></TouchableOpacity> */}
+              <View style={{ flexDirection: "row" }}>
+
+                <View style={{ flex: 0.25 }}>
+                  <TouchableOpacity style={styles.button} onPress={this.handleSubmitPhone.bind(this,item.mobileno1)}><Text style={styles.buttontext}>Phone</Text></TouchableOpacity>
+                </View>
+
+                <View style={{ flex: 0.25 }}>
+                  <TouchableOpacity style={styles.button} onPress={this.handleSubmitSMS.bind(this,item.mobileno1)}><Text style={styles.buttontext}>SMS</Text></TouchableOpacity>
+                </View>
+
+                <View style={{ flex: 0.25 }}>
+                  <TouchableOpacity style={styles.button} onPress={this.handleSubmitEmail.bind(this,item.email)}><Text style={styles.buttontext}>Email</Text></TouchableOpacity>
+                </View>
+
+              </View>
               <View style={{ width: '100%', height: 1, backgroundColor: '#000' }} />
+
             </TouchableOpacity>
             
           ))
